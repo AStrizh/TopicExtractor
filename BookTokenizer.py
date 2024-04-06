@@ -47,6 +47,8 @@ def process_files_parallel(input_folder, output_folder, chunk_size=1000, lemmati
 
 if __name__ == "__main__":
     # Example usage
-    input_folder = 'ProcessedBooks'
-    output_folder = 'ProcessedChunks'
+    # input_folder = 'ProcessedBooks'
+    # output_folder = 'ProcessedChunks'
+    input_folder = 'CleanCategorize'
+    output_folder = 'CleanChunks'
     process_files_parallel(input_folder, output_folder)

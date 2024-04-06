@@ -1,8 +1,8 @@
 import os
 import re
 
-books_directory = './Extracted'
-output_directory = './ProcessedBooks'
+books_directory = './FreshBook'
+output_directory = './DirtyCategorize'
 
 # Ensure the output directory exists
 os.makedirs(output_directory, exist_ok=True)

@@ -28,3 +28,12 @@ topic_model = BERTopic.load("unified_bertopic_model.pkl")
 # Get an overview of the topics
 topic_info = topic_model.get_topic_info()
 print(topic_info)
+print("---------------------------------------------------------------------------------")
+print("\n")
+for topic_num in range(len(topic_info)-1):  # Skip the -1 (outlier) topic
+    print(f"Topic {topic_num}: {topic_model.get_topic(topic_num)}")
+
+print("---------------------------------------------------------------------------------")
+# top_n = 5
+# top_topics_per_document = np.argsort(probabilities, axis=1)[:, -top_n:]
+# print(top_topics_per_document)

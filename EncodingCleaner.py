@@ -56,6 +56,9 @@ def clean_directory(input_directory, output_directory=None):
 
 
 # Example usage
-input_dir = 'ProcessedBooks'
-output_dir = 'ProcessedBooksClean'  # Set to None to overwrite originals
+# input_dir = 'ProcessedBooks'
+# output_dir = 'ProcessedBooksClean'  # Set to None to overwrite originals
+
+input_dir = 'DirtyCategorize'
+output_dir = 'CleanCategorize'  # Set to None to overwrite originals
 clean_directory(input_dir, output_dir)
